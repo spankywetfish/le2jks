@@ -35,7 +35,7 @@ Ensure all hosts which you are requesting certificates for are set up in DNS and
 
 Once deployed you should be able to find your PEM files in ```/etc/letsencrypt/domain/live```
 
-LE allows you to create one cert for multiple domains/hosts as long as each are specified on the command line with the –d option and each one is accessible to the LE CA for validation. When initially setting up multiple domains (for use as redirectors) it would be beneficial to host them all on one server until you have obtained your cert as CS C2 profiles only allow for one certificate.
+LE allows you to create one cert for multiple domains/hosts as long as each are specified on the command line with the –d option and each one is accessible to the LE CA for validation. When initially setting up multiple domains it would be beneficial to host them all on the one server running LE. Once you have obtained your certs you can then distribute them to individual servers if you so wish.
 
 ###Now create your JKS.
 
