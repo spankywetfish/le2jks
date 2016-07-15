@@ -1,4 +1,3 @@
-# le2jks
 ###Adding LetsEncrypt to a Java KeyStore
 
 This guide is designed for apache users who wish to add their LetsEncrpyt (LE) certs to a Java KeyStore (JKS).
