@@ -40,7 +40,7 @@ LE allows you to create one cert for multiple domains/hosts as long as each are 
 
 First create a PKCS12 file containing full chain and private key.
 ```
-# openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem -out pkcs.p12 –passout pass:[PKCSPWD] -name [NAME]
+# openssl pkcs12 -export -in fullchain.pem -inkey privkey.pem -out pkcs.p12 -passout pass:[PKCSPWD] -name [NAME]
 ```
 
 Now convert your PKCS12 file to a Java Keystore
