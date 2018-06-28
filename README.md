@@ -43,6 +43,17 @@ chmod a+x certbot-auto
 
 ```
 
+or
+
+```
+
+apt install software-properties-common
+add-apt-repository ppa:certbot/certbot
+apt update
+apt install python-certbot-apache
+
+```
+
 The second method will guide you through the certificate install process.
 However once you are familiar with the process or wish to automatically renew certs you can make use of the command line arguments.
 Full details on the usage of cerbot can be found [here](https://certbot.eff.org/docs/using.html).
