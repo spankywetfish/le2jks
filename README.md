@@ -51,6 +51,7 @@ apt install software-properties-common
 add-apt-repository ppa:certbot/certbot
 apt update
 apt install python-certbot-apache
+cerbot -d [domain]
 
 ```
 
