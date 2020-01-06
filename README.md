@@ -5,46 +5,6 @@ Although not a definitive guide to LE usage it should be possible to take the ba
 
 ####Download and install LetsEncrypt.
 
-There are now two ways to download and install LE.
-Firstly the old way...
-
-```
-# git clone https://github.com/letsencrypt/letsencrypt
-
-Cloning into 'letsencrypt'...
-remote: Counting objects: 34758, done.
-remote: Compressing objects: 100% (38/38), done.
-remote: Total 34758 (delta 17), reused 0 (delta 0), pack-reused 34720
-Receiving objects: 100% (34758/34758), 9.30 MiB | 4.19 MiB/s, done.
-Resolving deltas: 100% (24690/24690), done.
-
-# cd letsencrypt
-
-letsencrypt# ./letsencrypt-auto --help
-
-Checking for new version...
-Creating virtual environment...
-Installing Python packages...
-Installation succeeded.
-
----- output cut -----
-
-~/letsencrypt# ./letsencrypt-auto --apache --email admin@example.com -d example.com -d www.example.com -d other.example.net
-
-```
-
-And now the new (simpler) way...
-
-```
-
-wget https://dl.eff.org/certbot-auto
-chmod a+x certbot-auto
-./certbot-auto
-
-```
-
-or
-
 ```
 
 apt install software-properties-common
